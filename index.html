@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>horoscope 2.0</title>
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-theme.css">
+	
+	<link rel="stylesheet" type="text/css" href="plugins/jqueryui/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/jqueryui/jquery-ui.theme.min.css">
+  <link rel="stylesheet" type="text/css" href="plugins/jqueryui/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="plugins/jqueryui/external/jquery/jquery.js"></script>
+  <script src="plugins/jqueryui/jquery-ui.min.js"></script>
+  <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+      }
+      #tabs {
+        height: calc(100% - 0.4em);
+      }
+    </style>
+</head>
+<body>
+
+<div class="sk-fading-circle">             <!-- spinner --> 
+	<div class="sk-circle1 sk-circle"></div>
+	<div class="sk-circle2 sk-circle"></div>
+	<div class="sk-circle3 sk-circle"></div>
+	<div class="sk-circle4 sk-circle"></div>
+	<div class="sk-circle5 sk-circle"></div>
+	<div class="sk-circle6 sk-circle"></div>
+	<div class="sk-circle7 sk-circle"></div>
+	<div class="sk-circle8 sk-circle"></div>
+	<div class="sk-circle9 sk-circle"></div>
+	<div class="sk-circle10 sk-circle"></div>
+	<div class="sk-circle11 sk-circle"></div>
+	<div class="sk-circle12 sk-circle"></div>
+</div>
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Овен</a></li>
+		<li><a href="#tabs-2">Телец</a></li>
+		<li><a href="#tabs-3">Близнецы</a></li>
+		<li><a href="#tabs-4">Рак</a></li>
+		<li><a href="#tabs-5">Лев</a></li>
+		<li><a href="#tabs-6">Дева</a></li>
+		<li><a href="#tabs-7">Весы</a></li>
+		<li><a href="#tabs-8">Скорпион</a></li>
+		<li><a href="#tabs-9">Стрелец</a></li>
+		<li><a href="#tabs-10">Козерог</a></li>
+		<li><a href="#tabs-11">Водолей</a></li>
+		<li><a href="#tabs-12">Рыбы</a></li>
+	</ul>
+
+<div id="tabs-1" class="container" data-zodiac="aries">
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4 item">
+			<img src="img/aries.png">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4 item">
+			<h1>Овен</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4 item">с 21 марта по 20 апреля</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 horo">
+      <div class="cont"></div>
+      <div class="forecast"></div>
+		</div>
+	</div>
+</div>
+
+<div id="tabs-2" class="container" data-zodiac="taurus">
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4 item">
+			<img src="img/taurus.png">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4 item">
+			<h1>Телец</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4 item">с 21 апреля по 21 мая</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 horo">
+      <div class="cont"></div>
+      <div class="forecast"></div>
+		</div>
+	</div>
+</div>
+
+<div id="tabs-3" class="container" data-zodiac="gemini">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/gemini.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Близнецы</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 22 мая по 21 июня</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-4" class="container" data-zodiac="cancer">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/cancer.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Рак</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 22 июня по 22 июля</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-5" class="container" data-zodiac="leo">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/leo.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Лев</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 23 июля по 21 августа</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-6" class="container" data-zodiac="virgo">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/virgo.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Дева</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 22 августа по 23 сентября</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-7" class="container" data-zodiac="libra">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/libra.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Весы</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 24 сентября по 23 октября</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-8" class="container" data-zodiac="scorpio">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/scorpio.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Скорпион</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 24 октября по 22 ноября</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-9" class="container" data-zodiac="sagittarius">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/sagittarius.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Стрелец</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 23 ноября по 22 декабря</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-10" class="container" data-zodiac="capricornus">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/capricornus.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Козерог</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 23 декабря по 20 января</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-11" class="container" data-zodiac="aquarius">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/aquarius.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Водолей</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 21 января по 19 февраля</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+</div>
+<div id="tabs-12" class="container" data-zodiac="pisces">
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<img src="img/pisces.png">
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">
+  			<h1>Рыбы</h1>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-4 col-xs-offset-4 item">с 20 февраля по 20 марта</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-xs-12 horo">
+        <div class="cont"></div>
+        <div class="forecast"></div>
+  		</div>
+  	</div>
+  </div>
+</div>
+
+<!-- <script src="plugins/jqueryui/external/jquery/jquery.js"></script>
+<script src="plugins/jqueryui/jquery-ui.min.js"></script> -->
+<script src="script.js"></script>
+</body>
+</html>
